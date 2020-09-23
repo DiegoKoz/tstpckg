@@ -1,0 +1,26 @@
+---
+title: "Example of Vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Example of Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(tstpckg)
+```
+
+```{r}
+factor1 <- factor(c('Hi','there'))
+factor2 <- factor(c('we', 'are', 'testing', 'this', 'function'))
+fbind(factor1,factor2)
+```
+
